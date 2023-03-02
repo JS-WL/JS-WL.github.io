@@ -89,11 +89,11 @@
       <div id="btn">Start Game</div>
     </div>
     <canvas id="canvas"></canvas>
-    <audio id="launchsound" src="./sounds/launchSound.mp3"></audio>
-    <audio id="dead" src="./sounds/dead.mp3"></audio>
-    <audio id="hit" src="./sounds/hit.mp3"></audio>
-    <audio id="cure" src="./sounds/cure.mp3"></audio>
-    <audio id="gameOver" src="./sounds/gameoverBgm.mp3"></audio>
+    <audio id="launchsound" src="./sound/launchSound.mp3"></audio>
+    <audio id="dead" src="./sound/dead.mp3"></audio>
+    <audio id="hit" src="./sound/hit.mp3"></audio>
+    <audio id="cure" src="./sound/cure.mp3"></audio>
+    <audio id="gameOver" src="./sound/gameoverBgm.mp3"></audio>
   </body>
   <script>
     let canvas = document.getElementById('canvas');
@@ -118,7 +118,7 @@
     let bgmArray = [];
     for (let i = 0; i < 2; i++) {
       let audio = new Audio();
-      audio.src = './sounds/' + 'bgm' + (i + 1) + '.mp3';
+      audio.src = './sound/' + 'bgm' + (i + 1) + '.mp3';
       bgmArray.push(audio);
     }
     let ctx = canvas.getContext('2d');
